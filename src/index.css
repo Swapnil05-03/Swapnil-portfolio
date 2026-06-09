@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #080C14;
+    color: #F0F6FC;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.2);
+    color: #22D3EE;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080C14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22D3EE;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #22D3EE 0%, #3B82F6 50%, #A78BFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-subtle {
+    background: linear-gradient(90deg, #F0F6FC 0%, #8B949E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(#111827, #111827) padding-box,
+                linear-gradient(135deg, rgba(34,211,238,0.3), rgba(59,130,246,0.1), rgba(167,139,250,0.2)) border-box;
+  }
+
+  .border-gradient-hover:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(#111827, #111827) padding-box,
+                linear-gradient(135deg, rgba(34,211,238,0.6), rgba(59,130,246,0.3), rgba(167,139,250,0.4)) border-box;
+  }
+
+  .glass {
+    background: rgba(13, 19, 33, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .section-padding {
+    padding: 5rem 0;
+  }
+
+  .glow-dot::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #22D3EE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    box-shadow: 0 0 8px #22D3EE;
+    animation: pulse 2s infinite;
+  }
+}
