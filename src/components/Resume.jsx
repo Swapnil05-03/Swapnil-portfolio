@@ -63,7 +63,7 @@ export default function Resume() {
                   { icon: FiUser, label: 'Education', value: 'GL Bajaj Institute of Technology & Management' },
                   { icon: FiCode, label: 'Skills', value: 'Java · Python · C · DSA · OOP · Web Dev' },
                   { icon: FiFileText, label: 'Projects', value: 'SOS Triggering System · E-Commerce Website' },
-                  { icon: FiAward, label: 'Achievements', value: '200+ LeetCode · GSSoC 2026 · 5 Certifications' },
+                  { icon: FiAward, label: 'Achievements', value: '380+ LeetCode · GSSoC 2026 · 5 Certifications' },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-3">
                     <div className="w-7 h-7 rounded-lg bg-accent-glow border border-accent-cyan/20 flex items-center justify-center flex-shrink-0 mt-0.5">

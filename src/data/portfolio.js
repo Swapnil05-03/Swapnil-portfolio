@@ -61,8 +61,8 @@ export const projects = [
     id: 2,
     title: "E-Commerce Website",
     description:
-      "A responsive e-commerce platform featuring product listings, an interactive shopping cart, user authentication, and complete order management. Designed with a clean UI and mobile-first approach.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+      "A full-stack e-commerce platform with authentication, product browsing, smart search, wishlist, shopping cart, delivery location, and demo checkout. Includes an admin dashboard with role-based access to manage products, categories, users, and orders.",
+    tags: ["React", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL"],
     icon: "🛒",
     accent: "#22D3EE",
     accentLight: "rgba(34,211,238,0.1)",
@@ -73,13 +73,13 @@ export const projects = [
 
 export const achievements = [
   {
-    title: "200+ LeetCode Problems",
+    title: "380+ LeetCode Problems",
     description: "Consistently solved algorithmic challenges across arrays, trees, graphs, DP, and more.",
     icon: "⚡",
     color: "#F59E0B",
   },
   {
-    title: "70+ GeeksforGeeks Problems",
+    title: "160+ GeeksforGeeks Problems",
     description: "Practiced fundamental data structures and coding interview patterns.",
     icon: "💡",
     color: "#22D3EE",
@@ -89,6 +89,25 @@ export const achievements = [
     description: "Selected as a contributor for GirlScript Summer of Code 2026 — an open-source program.",
     icon: "🏆",
     color: "#A78BFA",
+  },
+  {
+    title: "Smart India Hackathon (SIH) 2026",
+    description: "Problem statement: Smart Automation – Conveyor Belt Joint Rupture Detection.",
+    icon: "🚀",
+    color: "#22C55E",
+  },
+  {
+    title: "Guidewire DEVTrails University Hackathon 2026",
+    description: "Project: SafeRide AI.",
+    icon: "🏁",
+    color: "#EC4899",
+  },
+  {
+    title: "Vault of Codes Virtual Internship",
+    description: "Completed a 1 Month Internship in AI & Prompt Engineering at VaultofCodes.in, starting July 1, 2026.",
+    icon: "🎓",
+    color: "#3B82F6",
+    certificate: "/vaultofcodes-internship-certificate.pdf",
   },
 ];
 
@@ -134,7 +153,7 @@ export const codingProfiles = [
   {
     name: "LeetCode",
     handle: "swapnil-dwivedi",
-    stat: "200+ Problems",
+    stat: "380+ Problems",
     description: "Algorithms & data structures practice",
     url: "https://leetcode.com/u/Swapnil_0503/",
     color: "#FFA116",
@@ -164,7 +183,7 @@ export const codingProfiles = [
   {
     name: "GeeksforGeeks",
     handle: "swapnil-dwivedi",
-    stat: "70+ Problems",
+    stat: "160+ Problems",
     description: "DSA fundamentals & interview prep",
     url: "https://www.geeksforgeeks.org/profile/swapnil0503",
     color: "#2F8D46",

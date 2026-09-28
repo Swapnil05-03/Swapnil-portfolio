@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiDownload, FiArrowDown } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolio';
 import ParticleBackground from './ParticleBackground';
+import profileImg from '../assets/profile.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -39,6 +40,23 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="flex flex-col items-center text-center">
+          {/* Profile photo */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            custom={0}
+            className="mb-6"
+          >
+            <div className="border-gradient rounded-full p-1 shadow-glow-cyan">
+              <img
+                src={profileImg}
+                alt="Swapnil Dwivedi"
+                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover object-top"
+              />
+            </div>
+          </motion.div>
+
           {/* Status badge */}
           <motion.div
             variants={fadeUp}
@@ -162,7 +180,7 @@ export default function Hero() {
             className="mt-16 flex flex-wrap items-center justify-center gap-8 sm:gap-12"
           >
             {[
-              { value: '200+', label: 'LeetCode Problems' },
+              { value: '380+', label: 'LeetCode Problems' },
               { value: '8.9', label: 'CGPA' },
               { value: 'GSSoC', label: '2026 Contributor' },
               { value: '5+', label: 'Certifications' },

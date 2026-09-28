@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { FiExternalLink } from 'react-icons/fi';
 import { achievements } from '../data/portfolio';
 import { SectionLabel } from './About';
 
@@ -73,6 +74,19 @@ function AchievementCard({ item, index }) {
       <p className="text-text-secondary text-sm leading-relaxed relative z-10">
         {item.description}
       </p>
+
+      {item.certificate && (
+        <a
+          href={item.certificate}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 mt-4 text-xs font-semibold relative z-10 hover:underline"
+          style={{ color: item.color }}
+        >
+          View Certificate
+          <FiExternalLink size={12} />
+        </a>
+      )}
     </motion.div>
   );
 }
